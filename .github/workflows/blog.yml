@@ -3,7 +3,7 @@ name: Tistory Blog Update
 on:
   schedule:
     - cron: '0 * * * *' # 매시간 정각마다 실행
-  workflow_dispatch:     # 수동 실행 허용
+  workflow_dispatch:     # 수동 실행 지원
 
 jobs:
   update-readme:
@@ -15,5 +15,6 @@ jobs:
         with:
           feed_list: "https://ta3g.tistory.com/rss"
           max_post_count: 10
-          # custom_headers를 통해 User-Agent와 Accept 헤더를 전달하여 406 차단 우회
-          custom_headers: '{"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36", "Accept": "*/*"}'
+          # 406 에러 차단 우회를 위한 전용 헤더 파라미터
+          user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+          accept_header: "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
