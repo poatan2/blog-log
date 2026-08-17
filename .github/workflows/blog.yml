@@ -2,18 +2,19 @@ name: Tistory Blog Update
 
 on:
   schedule:
-    # 매일 자정, 정오(한국 시간 오전 9시, 오후 9시)에 새 글이 있는지 확인합니다.
-    - cron: '0 * * * *' 
-  workflow_dispatch: # 수동으로 실행할 수 있는 버튼을 만들어줍니다.
+    - cron: '0 * * * *' # 매시간 정각마다 실행
+  workflow_dispatch:
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      # v2에서 v4로 수정 (Node.js 경고 해결)
+      - uses: actions/checkout@v4 
+      
       - uses: gautamkrishnar/blog-post-workflow@master
         with:
-          # 아래 주소에 본인 티스토리 RSS 주소를 입력하세요.
           feed_list: "https://ta3g.tistory.com/rss"
-          # 가져올 최신 글의 개수를 설정합니다. (기본값은 5개)
           max_post_count: 10
+          # 핵심 해결책: 티스토리 406 에러를 뚫기 위해 크롬 브라우저인 척 위장
+          user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
