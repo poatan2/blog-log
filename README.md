@@ -1,6 +1,7 @@
 ## 티스토리 최근 글
 
 <!-- BLOG-POST-LIST:START -->
+- [[Docker] Docekr Volume](https://ta3g.tistory.com/85)
 - [[Docker] Docker Container](https://ta3g.tistory.com/84)
 - [[Docker] Docker Image](https://ta3g.tistory.com/83)
 - [[Docker] Docker 명령어](https://ta3g.tistory.com/82)
@@ -10,5 +11,4 @@
 - [[Kafka] Kafka 개념 및 실습](https://ta3g.tistory.com/78)
 - [[programmers/ Lv.2] 피보나치 수](https://ta3g.tistory.com/77)
 - [[programmers/ Lv.1] 모의고사 / Comprehension &amp;amp; enumerate](https://ta3g.tistory.com/76)
-- [[Network] 방화벽](https://ta3g.tistory.com/75)
 <!-- BLOG-POST-LIST:END -->
