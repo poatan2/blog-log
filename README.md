@@ -1,6 +1,8 @@
 ## 티스토리 최근 글
 
 <!-- BLOG-POST-LIST:START -->
+- [[Kubernetes] Blue/Green Deployment &amp;amp; Canary Deployment](https://ta3g.tistory.com/112)
+- [[Kubernetes] Rolling Update &amp;amp; Recreate](https://ta3g.tistory.com/111)
 - [[Kubernetes] Health Check](https://ta3g.tistory.com/110)
 - [[Kubernetes] Auto Scaling](https://ta3g.tistory.com/109)
 - [[Kubernetes] Resource Mangement](https://ta3g.tistory.com/108)
@@ -9,6 +11,4 @@
 - [[Kubernetes] Storage API - emptyDir, hostPath, 영구볼륨&lpar;PV&rpar;](https://ta3g.tistory.com/105)
 - [[Kubernetes] Config API - ConfigMap, Secret](https://ta3g.tistory.com/104)
 - [[Kubernetes] Service API&lpar;4&rpar; - ExternalName, None-Selector](https://ta3g.tistory.com/103)
-- [[Kubernetes] Service API&lpar;3&rpar; - 노드 간 통신 제외, Ingress](https://ta3g.tistory.com/102)
-- [[Kubernetes] Service API&lpar;2&rpar; - ExternalIP, NodePort, LoadBalancer](https://ta3g.tistory.com/101)
 <!-- BLOG-POST-LIST:END -->
